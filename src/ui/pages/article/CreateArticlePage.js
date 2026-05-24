@@ -24,6 +24,7 @@ export class CreateArticlePage {
       await this.titleField.fill(title);
     });
   }
+  
 
   async fillDescriptionField(description) {
     await test.step(`Fill the 'Description' field`, async () => {
