@@ -24,13 +24,15 @@ export class CreateArticlePage {
       await this.titleField.fill(title);
     });
   }
-  
+
 
   async fillDescriptionField(description) {
     await test.step(`Fill the 'Description' field`, async () => {
       await this.descriptionField.fill(description);
     });
   }
+
+  
 
   async fillTextField(text) {
     await test.step(`Fill the 'Text' field`, async () => {
