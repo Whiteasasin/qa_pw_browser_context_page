@@ -32,13 +32,14 @@ export class CreateArticlePage {
     });
   }
 
-  
+
 
   async fillTextField(text) {
     await test.step(`Fill the 'Text' field`, async () => {
       await this.textField.fill(text);
     });
   }
+
 
   async fillTagsField(tags) {
     await test.step(`Fill the 'Tags' field`, async () => {
@@ -48,6 +49,7 @@ export class CreateArticlePage {
       }
     });
   }
+  
 
   async clickPublishArticleButton() {
     await test.step(`Click the 'Publish Article' button`, async () => {
